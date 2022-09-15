@@ -96,7 +96,7 @@
           <div class="modal_text">Zostaw swoje dane w formularzu poniżej</div>
           <form class="form_box">
            <div class="form_label"> 
-            <label >
+            <label for="username">
              <p class="label_name"> Imię</p>
              <div class="input">
                <span>             
@@ -107,25 +107,25 @@
                   x="192"
                   y="0">
                   <use href="./images/icons.svg#icon-person-black"></use></svg></span>
-           <span><input class="input-box" type="text name=username" ></span>
+           <span><input class="input-box" type="text" name="username" id="username"></span>
               </div>
             </label>
           </div> 
           <div class="form_label">
-            <label >
+            <label for="phone_number">
               <p class="label_name">telefon</p>
               <div class="input">
                 <span>
                   <svg class="icon-phone-black" id="icon-phone-black"
                   width="32" height="32" viewBox="0 0 32 32" x="144" y="0">
                   <use href="./images/icons.svg#icon-phone-black"></use></svg></span>
-              <span><input class="input-box" type="tel" name="phone_number"></span>
+              <span><input class="input-box" type="tel" name="phone_number" id="phone_number"></span>
             </label>
           </div>
         </div>
 
             <div class="form_label">
-            <label>
+            <label for="email">
               <p class="label_name">E-mail </p>
               <div class="input">
                 <span>
@@ -133,15 +133,25 @@
                     <use href="./images/icons.svg#icon-email-black"></use>
                   </svg>
                 </span>
-              <span><input class="input-box" type="email" name="email"></span>
+              <span><input class="input-box" type="email" name="email" id="email"></span>
             </label></div></div>
 
             <div class="form_label">
-            <label>
+            <label for="comment">
              <p class="label_name"> Komentarz</p>
-              <textarea class="input-comment" type="text" name="comment" placeholder="Wprowadź tekst"></textarea>
+              <textarea class="input-comment" type="text" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
             </label></div>
           </form>
+<div> 
+  <span>
+    <svg class="icon-Vector" id="icon-Vector" width="16" height="15" viewBox="0 0 32 32" x="48" y="0">
+      <use href="./images/icons.svg#icon-Vector"></use>
+    </svg>
+  </span>
+  <span >Oświadczam iż akceptuję Regulamin i Politykę Prywatności.</span>
+</div>
+
+
         <button class=btn_close data-modal-close>x</button></div>
        </div>
       <section class="h1__bg">
@@ -718,8 +728,8 @@
         <div class="newsletter_box">
          <p class="join"> Zapisz się do newslettera</p>
          <form name="email">
-           <label>
-                <input class=input_email type="email" name="email" placeholder=E-mail>
+           <label for="email">
+                <input class=input_email type="email" name="email" id="email" placeholder=E-mail>
            </label>
   <button class="btn_sign-in" type="submit">
     <span class="sign-in"><p class="sign-in-text"> Zapisz się</p>
