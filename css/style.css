@@ -362,7 +362,7 @@ ul {
   width: 448px;
   height: 58px;
   margin-bottom: 10px;
-
+  display: flex;
 }
 
 .label_name {
@@ -432,6 +432,49 @@ ul {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+}
+
+.comment {
+  height: 138px;
+}
+
+.vector-box {
+  width: 16px;
+  height: 15px;
+  border-radius: 2px;
+  border: 1px solid var(--text-color);
+  margin-right: 7px;
+  margin-top: 3px;
+
+
+}
+
+.icon-Vector {
+  width: 11px;
+  height: 8px;
+  fill: var(--main-color);
+  margin: 3px 2px 4px 3px;
+}
+
+.icon-Vector::after:checked {
+  bachground-color: var(--brand-color);
+}
+
+.agreement {
+  display: flex;
+  margin-left: 54px;
+  margin-top: 25px;
+}
+
+.agreement-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: var(--text2-color);
+}
+.agreement-text a{
+  color:var(--brand-color);
 }
 
 .is-hidden {
@@ -934,17 +977,6 @@ ul {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.06em;
-}
-
-.icon-Vector {
-  width: 16px;
-  height: 15px;
-  border: 1px solid var(--text-color);
-  fill: var(--main-color);
-}
-
-.icon-Vector::after:checked {
-  bachground-color: var(--brand-color);
 }
 
 .sign-in {
