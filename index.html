@@ -93,6 +93,41 @@
     <main>
        <div class="backdrop is-hidden" data-modal>
         <div class="modal_window">
+          <div class="modal_text">Zostaw swoje dane w formularzu poniżej</div>
+          <form class="form_box">
+           <div class="form_label"> 
+            <label >
+             <p class="label_name"> Imię</p>
+             <div class="input">
+               <span>             
+               <svg class="icon-person-black" id="icon-person-black"
+                  width="12"
+                  height="12"
+                  viewBox="0 0 12 12"
+                  x="192"
+                  y="0">
+                  <use href="./images/icons.svg#icon-person-black"></use></svg></span>
+           <span><input class="input-box" type="text name=username" ></span>
+              </div>
+            </label>
+          </div> 
+          <div class="form_label">
+            <label >
+              <p class="label_name">telefon</p>
+              <input class="input" type="tel" name="phone_number">
+            </label></div>
+
+            <div class="form_label">
+            <label>
+              <p class="label_name">E-mail </p>
+              <input class="input" type="email" name="email">
+            </label></div>
+            <div class="form_label">
+            <label>
+             <p class="label_name"> Komentarz</p>
+              <textarea class="input" type="text" name="comment" rows="6" placeholder="Wprowadź tekst"></textarea>
+            </label></div>
+          </form>
         <button class=btn_close data-modal-close>x</button></div>
        </div>
       <section class="h1__bg">

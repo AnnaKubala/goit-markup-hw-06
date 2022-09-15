@@ -339,6 +339,71 @@ ul {
   cursor: pointer;
 }
 
+.modal_text {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-bottom: 12px;
+}
+
+.form_box {
+  margin-left: 40px;
+  margin-right: 40px;
+
+}
+
+.form_label {
+  width: 448px;
+  height: 58px;
+  margin-bottom: 10px;
+
+}
+
+.label_name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+  color: var(--text2-color);
+  padding-bottom: 4px;
+}
+
+.input {
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  display: flex;
+}
+
+.input-box {
+  display: flex;
+  border: none;
+  width: 407px;
+  height: 38px;
+  align-content: center;
+  justify-content: baseline;
+  padding-left: 14px;
+}
+
+.icon-person-black {
+  width: 12px;
+  height: 12px;
+  fill: var(--text-color);
+  margin-left: 15px;
+  margin-top: 14px;
+  margin-bottom: 14px;
+
+}
+
+
+
 .is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -817,11 +882,6 @@ ul {
   background-color: var(--footer_bg-color);
 }
 
-input {
-  padding-left: 16px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
 
 .btn_sign-in {
   width: 200px;
