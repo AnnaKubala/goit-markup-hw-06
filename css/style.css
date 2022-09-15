@@ -389,7 +389,7 @@ ul {
   height: 38px;
   align-content: center;
   justify-content: baseline;
-  padding-left: 14px;
+  padding-left: 15px;
 }
 
 .icon-person-black {
@@ -401,7 +401,14 @@ ul {
   margin-bottom: 14px;
 
 }
-
+.icon-phone-black{
+  width:13px;
+  height:13px;
+  fill:var(--text-color);
+  margin-left: 14px;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
 
 
 .is-hidden {
