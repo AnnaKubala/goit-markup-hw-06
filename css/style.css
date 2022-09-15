@@ -431,7 +431,6 @@ ul {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
@@ -911,6 +910,9 @@ ul {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   background-color: var(--footer_bg-color);
+  padding-left:16px;
+  padding-top:15px;
+  padding-bottom:15px;
 }
 
 
@@ -920,6 +922,7 @@ ul {
   background-color: var(--brand-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
+  border: none;
   display: inline-flex;
   text-align: center;
   justify-content: center;
@@ -941,7 +944,7 @@ ul {
 .sign-in-text {
   padding-top: 10px;
   padding-bottom: 10px;
-
+padding-right:24px;
 }
 
 .icon-icon-send {
@@ -949,8 +952,7 @@ ul {
   width: 24px;
   height: 24px;
   fill: var(--main-color);
-  /* margin-left: 24px;
-  margin-top:13px; */
+   margin-top:13px;
 }
 
 /* ----------------------------------------------STRONA PORTFOLIO-------------------------------------------------------------- */
