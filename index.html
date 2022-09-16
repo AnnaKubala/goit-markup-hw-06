@@ -120,11 +120,11 @@
             <div class="form_label">
             <label for="email" class="label_name">
               E-mail 
-                 <svg class="icon-email-black" id="icon-email-black"width="15" height="12" viewBox="0 0 32 32" x="96" y="0">
+                <span> <svg class="icon-email-black" id="icon-email-black"width="15" height="12" viewBox="0 0 32 32" x="96" y="0">
                     <use href="./images/icons.svg#icon-email-black"></use>
                   </svg>
                 
-              <input class="input-box" type="email" name="email" id="email">
+              <input class="input-box" type="email" name="email" id="email"></span>
            </label>
           </div>
 
@@ -134,18 +134,17 @@
               <textarea class="input-comment" type="text" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
             </label></div>
          
-<div class="agreement"> 
- <p class="vector-box">
-  <label for="agreement" class="agreement-text">
+ <label class="agreement">
+      <p class="vector-box">
+        <svg class="icon-Vector " id="icon-Vector" width="11" height="8" viewBox="0 0 32 32" x="50" y="0">
+            <use href="./images/icons.svg#icon-Vector"></use>
+          </svg> 
+    <input  type="checkbox" name="agreement" value="agree" /></p>
 
-   <input id="agreement" type="checkbox" name="agreement" value="agree" />
-
- Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
-  </label></p>
-
-
+    <p class="agreement-text">Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></p>
   
-</div>
+  </label>
+
 <button class="btn_submit" type="submit">Wyślij</button>
  </form>
         <button class=btn_close data-modal-close>x</button></div>

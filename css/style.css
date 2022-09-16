@@ -391,6 +391,8 @@ ul {
   width: 448px;
   border-radius: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  fill: var(--second-color);
+  outline: none;
 }
 
 .input-box:focus-within svg,
@@ -398,6 +400,7 @@ ul {
   border: 1px solid var(--brand-color);
   color: var(--brand-color);
   fill: var(--brand-color);
+
 }
 
 .icon-person-black {
@@ -407,7 +410,6 @@ ul {
   width: 12px;
   height: 12px;
   fill: var(--text-color);
-
 }
 
 .icon-phone-black {
@@ -441,42 +443,42 @@ ul {
   line-height: 14px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  resize: none;
 }
 
 .input-comment:hover,
 .input-comment:focus {
   border: 1px solid var(--brand-color);
-  color:var(--text-color);
+  color: var(--text-color);
 }
 
 .comment {
-  hwidth: 448px;
+  width: 448px;
   height: 120px;
   resize: none;
+  outline: none;
 }
 
-
 Input {
-  /* appearance: none;
-  -webkit-appearance: none; */
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 Label {
   position: relative;
 }
 
-.vector-box {
+.icon-Vector {
   Display: flex;
-
   width: 16px;
   height: 15px;
+  fill: var(--main-color);
 }
 
 .vector-box::before {
   Display: block;
+  content: "";
   Position: absolute;
-  Content: "";
-  top: 1px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
@@ -487,7 +489,6 @@ Label {
 
 Input:checked+.vector-box::before {
   Content: "";
-  Background-image: url("./images/icons.svg#icon-Vector");
   Background-color: var(--brand-color);
   Color: var(--main-color);
   fill: var(--main-color);
@@ -508,7 +509,7 @@ Input:checked+.vector-box::before {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text2-color);
-  margin-left: 5px;
+  margin-left: 25px;
 
 }
 
@@ -532,7 +533,7 @@ Input:checked+.vector-box::before {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin-left: 164px;
+  margin-left: 144px;
   margin-right: 164px;
   margin-top: 30px;
 }
