@@ -421,12 +421,12 @@ ul {
 }
 
 .icon-email-black {
+  position: absolute;
   width: 15px;
   height: 12px;
   fill: var(--text-color);
-  margin-left: 13.5px;
-  margin-top: 14px;
-  margin-bottom: 14px;
+  top: 30px;
+  left: 15px;
 }
 
 .input-comment {
