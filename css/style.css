@@ -394,15 +394,19 @@ ul {
   fill: var(--second-color);
   outline: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform;
+  transition-property: transform;
 }
 
-.input-box:focus-within svg,
+.input-box:focus,
 .input-box:hover {
   border: 1px solid var(--brand-color);
   color: var(--brand-color);
   fill: var(--brand-color);
+}
 
+.input-box:focus-within+svg,
+.input-box:hover +svg {
+   fill: var(--brand-color);
 }
 
 .icon-person-black {
@@ -448,7 +452,7 @@ ul {
   resize: none;
   outline: none;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform;
+  transition-property: transform;
 }
 
 .input-comment:hover,
@@ -491,7 +495,7 @@ Label {
   margin-right: 7px;
   margin-top: 3px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform;
+  transition-property: transform;
 }
 
 Input:checked+.vector-box::before {
@@ -539,9 +543,15 @@ Input:checked+.vector-box::before {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
-  margin-left: 144px;
+  margin-left: 135px;
   margin-right: 164px;
   margin-top: 30px;
+}
+
+.btn_close:hover,
+.btn_close:focus {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
 }
 
 .is-hidden {
