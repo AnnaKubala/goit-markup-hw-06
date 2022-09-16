@@ -93,65 +93,63 @@
     <main>
        <div class="backdrop is-hidden" data-modal>
         <div class="modal_window">
+
           <div class="modal_text">Zostaw swoje dane w formularzu poniżej</div>
           <form class="form_box">
            <div class="form_label"> 
-            <label for="username">
-             <p class="label_name"> Imię</p>
-             <div class="input">
-               <span>             
+            <label for="username" class="label_name">
+             Imię       
                <svg class="icon-person-black" id="icon-person-black"
-                  width="12"
-                  height="12"
-                  viewBox="0 0 12 12"
-                  x="192"
-                  y="0">
-                  <use href="./images/icons.svg#icon-person-black"></use></svg></span>
-           <span><input class="input-box" type="text" name="username" id="username"></span>
-              </div>
-            </label>
+                  width="12" height="12" viewBox="0 0 12 12" x="192"  y="0">
+                  <use href="./images/icons.svg#icon-person-black"></use></svg>
+           <input class="input-box" type="text" name="username" id="username"> 
+             </label>
           </div> 
+
           <div class="form_label">
-            <label for="phone_number">
-              <p class="label_name">telefon</p>
-              <div class="input">
-                <span>
-                  <svg class="icon-phone-black" id="icon-phone-black"
+            <label for="phone_number" class="label_name">
+              telefon
+                <svg class="icon-phone-black" id="icon-phone-black"
                   width="32" height="32" viewBox="0 0 32 32" x="144" y="0">
-                  <use href="./images/icons.svg#icon-phone-black"></use></svg></span>
-              <span><input class="input-box" type="tel" name="phone_number" id="phone_number"></span>
+                  <use href="./images/icons.svg#icon-phone-black"></use></svg>
+              <input class="input-box" type="tel" name="phone_number" id="phone_number">
             </label>
           </div>
-        </div>
+        
 
             <div class="form_label">
             <label for="email">
               <p class="label_name">E-mail </p>
               <div class="input">
-                <span>
+                
                   <svg class="icon-email-black" id="icon-email-black"width="15" height="12" viewBox="0 0 32 32" x="96" y="0">
                     <use href="./images/icons.svg#icon-email-black"></use>
                   </svg>
-                </span>
-              <span><input class="input-box" type="email" name="email" id="email"></span>
-            </label></div></div>
+                
+              <input class="input-box" type="email" name="email" id="email">
+              </div>
+            </label></div>
 
             <div class="form_label comment">
             <label for="comment">
              <p class="label_name"> Komentarz</p>
               <textarea class="input-comment" type="text" name="comment" id="comment" placeholder="Wprowadź tekst"></textarea>
             </label></div>
-          </form>
+         
 <div class="agreement"> 
-  <span class="vector-box">
-    <svg class="icon-Vector" id="icon-Vector" width="11" height="8" viewBox="0 0 32 32" x="48" y="0">
-      <use href="./images/icons.svg#icon-Vector"></use>
-    </svg>
-  </span>
-  <span class="agreement-text">Oświadczam iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a></span>
+ <p class="vector-box">
+  <label for="agreement" class="agreement-text">
+
+   <input id="agreement" type="checkbox" name="agreement" value="agree" />
+
+ Oświadczam, iż akceptuję <a href="#">Regulamin</a> i <a href="#">Politykę Prywatności.</a>
+  </label></p>
+
+
+  
 </div>
 <button class="btn_submit" type="submit">Wyślij</button>
-
+ </form>
         <button class=btn_close data-modal-close>x</button></div>
        </div>
       <section class="h1__bg">

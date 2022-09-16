@@ -382,33 +382,42 @@ ul {
   display: flex;
 }
 
+
 .input-box {
-  display: flex;
-  border: none;
-  width: 407px;
-  height: 38px;
-  align-content: center;
-  justify-content: baseline;
-  padding-left: 15px;
+  display: block;
+  padding: 0 0 0 30px;
+  margin: 3px 0 10px 0;
+  height: 40px;
+  width: 448px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.input-box:focus-within svg,
+.input-box:hover {
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+  fill: var(--brand-color);
 }
 
 .icon-person-black {
+  position: absolute;
+  top: 30px;
+  left: 15px;
   width: 12px;
   height: 12px;
   fill: var(--text-color);
-  margin-left: 15px;
-  margin-top: 14px;
-  margin-bottom: 14px;
 
 }
 
 .icon-phone-black {
+  position: absolute;
   width: 13px;
   height: 13px;
   fill: var(--text-color);
-  margin-left: 14px;
-  margin-top: 13px;
-  margin-bottom: 13px;
+  top: 30px;
+  left: 15px;
+
 }
 
 .icon-email-black {
@@ -435,43 +444,66 @@ ul {
 }
 
 .comment {
-  height: 138px;
+  hwidth: 448px;
+  height: 120px;
+  resize: none;
+}
+
+
+Input {
+  /* appearance: none;
+  -webkit-appearance: none; */
+}
+
+Label {
+  position: relative;
 }
 
 .vector-box {
+  Display: flex;
+
+  width: 16px;
+  height: 15px;
+}
+
+.vector-box::before {
+  Display: block;
+  Position: absolute;
+  Content: "";
+  top: 1px;
   width: 16px;
   height: 15px;
   border-radius: 2px;
   border: 1px solid var(--text-color);
   margin-right: 7px;
   margin-top: 3px;
-
-
 }
 
-.icon-Vector {
-  width: 11px;
-  height: 8px;
+Input:checked+.vector-box::before {
+  Content: "";
+  Background-image: url("./images/icons.svg#icon-Vector");
+  Background-color: var(--brand-color);
+  Color: var(--main-color);
   fill: var(--main-color);
-  margin: 3px 2px 4px 3px;
-}
-
-.icon-Vector::after:checked {
-  bachground-color: var(--brand-color);
 }
 
 .agreement {
   display: flex;
-  margin-left: 54px;
+  margin-left: 14px;
   margin-top: 25px;
+  position: relative;
 }
 
 .agreement-text {
+  display: flex;
+  position: absolute;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--text2-color);
+  margin-left: 5px;
+
 }
 
 .agreement-text a {
@@ -495,6 +527,7 @@ ul {
   border-radius: 4px;
   border: none;
   margin-left: 164px;
+  margin-right: 164px;
   margin-top: 30px;
 }
 
