@@ -443,6 +443,12 @@ ul {
   color: rgba(117, 117, 117, 0.5);
 }
 
+.input-comment:hover,
+.input-comment:focus {
+  border: 1px solid var(--brand-color);
+  color:var(--text-color);
+}
+
 .comment {
   hwidth: 448px;
   height: 120px;
