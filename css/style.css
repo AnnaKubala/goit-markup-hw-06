@@ -497,7 +497,6 @@ Label {
 Input:checked+.vector-box::before {
   Content: "";
   Background-color: var(--brand-color);
-  Color: var(--main-color);
   fill: var(--main-color);
 }
 
