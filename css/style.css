@@ -310,7 +310,7 @@ ul {
   opacity: 1;
 }
 
-.modal_window {
+.modal__window {
   position: absolute;
   width: 528px;
   height: 581px;
@@ -341,7 +341,7 @@ ul {
   transition-property: transform, color, border;
 }
 
-.modal_text {
+.modal__text {
   font-weight: 700;
   font-size: 20px;
   line-height: 23px;
@@ -354,20 +354,20 @@ ul {
   margin-bottom: 12px;
 }
 
-.form_box {
+.form {
   margin-left: 40px;
   margin-right: 40px;
 
 }
 
-.form_label {
+.form___label {
   width: 448px;
   height: 58px;
   margin-bottom: 10px;
   display: flex;
 }
 
-.label_name {
+.label__name {
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
@@ -385,7 +385,7 @@ ul {
 }
 
 
-.input-box {
+.label__input-box {
   display: block;
   padding: 0 0 0 30px;
   margin: 3px 0 10px 0;
@@ -401,16 +401,16 @@ ul {
 
 }
 
-.input-box:focus,
-.input-box:hover {
+.label__input-box:focus,
+.label__input-box:hover {
   border: 1px solid var(--brand-color);
   fill: var(--brand-color);
   background-color: var(--main-color);
   cursor: pointer;
 }
 
-.input-box:focus-within+svg,
-.input-box:hover+svg {
+.label__input-box:focus-within+svg,
+.label__input-box:hover+svg {
   fill: var(--brand-color);
   background-color: var(--main-color);
   cursor: pointer;
@@ -591,14 +591,14 @@ Input:checked+svg {
 }
 
 
-.features_list {
+.features__list {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
   gap: 30px;
 }
 
-.div__feature-box {
+.features__box {
   width: 270px;
   height: 120px;
   background: var(--filters-color);
@@ -606,19 +606,19 @@ Input:checked+svg {
   margin-bottom: 30px;
 }
 
-.icon-antenna {
+.features__box__icon-antenna {
   margin: 25px 100px;
 }
 
-.icon-clock {
+.features__box__icon-clock {
   margin: 25px 101px;
 }
 
-.icon-diagram {
+.features__box__icon-diagram {
   margin: 33px 100px;
 }
 
-.icon-astronaut {
+.features__box__icon-astronaut {
   margin: 25px 100px;
 }
 
@@ -634,7 +634,6 @@ Input:checked+svg {
 
 .features__text {
   width: 270px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -643,16 +642,12 @@ Input:checked+svg {
   color: var(--text2-color);
 }
 
-.img {
-  display: block;
-}
-
 .our-work {
   background-color: var(--main-color);
   padding-top: 0;
 }
 
-.our-work_header {
+.our-work__header {
   display: flex;
   justify-content: space-evenly;
   width: 1200px;
@@ -670,11 +665,10 @@ Input:checked+svg {
   flex-direction: row;
 }
 
-.box {
+.our-work__list__item {
   width: 370px;
   margin-right: 30px;
   position: relative;
-
 }
 
 .label__our-work {
@@ -705,7 +699,7 @@ Input:checked+svg {
   padding: 27px 94px;
 }
 
-.our__team {
+.our-team {
   display: block;
   padding-left: 200px;
   padding-right: 200px;
